@@ -1,0 +1,47 @@
+#form1 {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px 40px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+  }
+
+  #form1 .txt {
+    width: 400px;
+    padding: 6px;
+    border: 1px solid lightslategrey;
+  }
+
+  #form1 #fs1 {
+    width: 385px;
+  }
+
+  #form1 #fs2 {
+    width: 385px;
+  }
+
+  #form1 fieldset {
+    border: 1px solid rgb(190, 210, 230);
+    margin-top: 0;
+  }
+
+  #form1 #dangki {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    margin-left: 150px;
+  }
+
+  #form1 #baoloi {
+    margin: 0px auto;
+    color: red;
+  }
+
+  #form1 .loi {
+    width: 385px;
+    padding: 6px;
+    border: 1px solid rgb(24, 23, 23);
+    background-color: rgb(235, 235, 233);
+  }

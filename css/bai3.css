@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+.main {
+    background-color: rgb(202, 243, 243);
+    border: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+    height: 700px;
+}
+.boxcenter {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    
+}
+select {
+    padding: 10px 0;
+    margin: 15px;
+    background-color: aqua;
+}
+h2 {
+    padding: 15px 0 0 0;
+}
+table, td, th {
+    border: 1px solid gray;
+    margin: auto;
+    margin-top: 10px;
+    background-color: aqua;
+    width: 600px;
+    padding: 10px;
+}
+caption {
+    caption-side: bottom;
+}
+input[type="number"] {
+    width: 40px;
+    
+}

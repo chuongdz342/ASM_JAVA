@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhanVănChươngSiêuCấpVipPro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main {
+    width: 85%;
+    background-color:rgba(0, 0, 0, 0.5);
+    margin: 0 auto;   
+}
+.boxcenter {
+    width: 80%;
+    margin: 0 auto;
+   
+    
+}
+#dem {
+    text-align: center;
+    padding-bottom: 70px;
+ 
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 112px;
+    color: white;
+    line-height: 40px;
+    height: 40px;
+}
+h2 {
+    text-align: center;
+    padding: 10px 0;
+}
+img {
+    height: 500px;
+    width: 50%;
+    margin-left: 232px;
+    border-radius: 15px;
+    padding: 20px 0;
+    
+}
+#main i:last-child {
+    position: relative;
+    
+}
+.icon .trai {
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    font-size: 40px;
+  
+}
+.icon .phai {
+    position: absolute;
+    top: 50%;
+    right: 23%;
+    font-size: 40px;
+    
+}
+
+</style>
+<script>
+    var img =[];
+    var index=0;
+    var sohinh=6;
+    for (var i=0;i<sohinh;i++){
+        img[i]=new Image();
+        img[i].src="img/"+i+".jpg"
+    }
+
+     var arr_mota = [
+     
+     "ao phong 0",
+     "ao phong 1",
+     "ao phong 2",
+     "ao phong 3",
+     "ao phong 4",
+     "ao phong 5",
+
+
+    ]
+      function next(){
+      index++;
+      if(index >= img.length)index=0;
+      var anh=document.getElementById("anh");
+      anh.src=img[index].src;
+      document.getElementById("dem").innerHTML = arr_mota[index];
+
+    }
+    function prev(){
+       index--;
+       if(index<0)index = img.length-1;
+       var anh= document.getElementById("anh");
+       anh.src=img[index].src;
+       document.getElementById("dem").innerHTML = arr_mota[index];
+
+    }
+    setInterval("next()", 2500);
+</script>
+<body>
+    
+    <div class="main">
+        <div class="boxcenter">
+            <h2>shop ao phongggggggggg</h2>
+        
+                <img id="anh" src="./img/0.jpg" alt="anh">
+            </div>
+           <div class="icon">
+            
+            <i onclick="prev()" class="trai fa-solid fa-circle-arrow-left" ></i>
+            <i onclick="next()"  class="phai fa-solid fa-circle-arrow-right"></i>
+           </div>
+           
+            <div id="dem">
+                ao phong 0
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

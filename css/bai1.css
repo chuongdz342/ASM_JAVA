@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+form {
+    
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(177, 36, 36);
+    
+}
+p {
+    color: white;
+    margin: 10px 0 ;
+}
+input {
+    padding: 7px;
+    border-radius: 7px;
+    
+}
+button {
+    padding: 8px 14px;
+   
+    background-color: rgb(154, 154, 235);
+}
+.khung button{
+    margin: 10px 6px;
+}
+.xoa {
+    margin-bottom: 10px;
+}
+.main {
+    
+}
+.container {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+h3 {
+    color: white;
+    margin-top: 10px;
+}
+.kq {
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    height: 140px;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+    
+
+}
+#h {
+    font-weight:400;
+    display: block;
+    font-size: 30px;
+    margin: 0 0 5px;
+    letter-spacing: 5px;
+    
+    
+}
+center {
+    margin-bottom: 15px;
+    color: yellow;
+}
+.kq #answer,
+.kq #answer-2 {
+   color: yellow;
+}
